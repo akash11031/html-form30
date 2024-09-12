@@ -1,0 +1,912 @@
+/* google font linking */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global CSS start*/
+:root{
+    --komola: #ff9b51;
+    --komola2:#ff8b38;
+    --var2:#f5f5f5 ;
+    --sada:#ffffff;
+    --kala:black ;
+    --kala2:#303030;
+    --var3:#b4b4b7;
+    
+    
+}
+*, *::after, *::before{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family: "Raleway", sans-serif; */
+    font-family: "Open Sans", sans-serif;
+}
+
+ul li{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+h2{
+    font-family: "Raleway", sans-serif;
+    font-size: 36px; 
+    line-height: 46px;
+}
+
+h2:hover{
+    background: linear-gradient(108.18deg, rgb(255, 0, 208) -15%, rgb(0, 21, 128) 50%);
+    -webkit-background-clip: text;
+    display: inline-block;
+    -webkit-text-fill-color: transparent;
+}
+
+h4{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h4:hover{
+    background: linear-gradient(108.18deg, red -15%, green 50%);
+    -webkit-background-clip: text;
+    display: inline-block;
+    -webkit-text-fill-color: transparent;
+}
+
+.under-line{
+  /* width: 100px; 
+  height: 3px; 
+  background-color:var(--komola); */
+  position: relative;
+  padding: 25px 0px;
+
+}
+
+.under-line::after{
+    content: '';
+    width: 75px; 
+    height: 3px; 
+    background-color:var(--komola);
+    position: absolute;
+    transition: 0.8s;
+    
+ }
+
+ .under-line:hover::after{
+    transition: 0.8s; 
+    width: 150px;
+      
+ }
+ 
+ .onder-line{
+    position: relative;
+    padding: 20px 0px;
+  
+  }
+  .onder-line::after{
+      content: '';
+      width: 150px; 
+      height: 3px; 
+      background-color:var(--komola);
+      position: absolute;
+      transition: 0.8s;
+      transform: scale(50%, 100%);
+      /* transform: scale(0 100); */
+      
+   }
+  
+   .onder-line:hover::after{
+      transition: 0.8s; 
+      transform: scale(100%, 100%);  
+   }
+
+
+p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--var3);
+    font-weight: 500;
+}
+
+i{
+    font-size: 48px;
+}
+/* Global CSS end*/
+
+/* header section CSS start*/
+header{
+    background-color: var(--kala);
+}
+
+.navbar{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header .nav-item{
+position: relative;
+margin-left: 25px;
+}
+
+header .nav-item::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: var(--komola);
+    transition: 0.8s;
+    transform: scale(0%, 100%);
+    left: 0;
+}
+
+header .nav-item:hover::after{
+    transition: 0.8s;
+    transform: scale(100%, 100%);
+}
+
+header .nav-link{
+ color: var(--var2);
+ font-size: 11.52pt;
+}
+
+header .nav-link:hover{
+ color: var(--var2);
+}
+
+header .nav-item .active{
+color: var(--sada) !important;
+}
+
+
+header .navbar .first-child::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: var(--komola);
+    transition: 0.8s;
+    transform: scale(50%, 100%);
+    left: 0;
+}
+
+header .navbar .first-child:hover::after{
+    transition: 0.8s;
+    transform: scale(100%, 100%);
+}
+/* header section CSS end*/
+
+/* banner section CSS start*/
+.banner-section{
+    background: url(../img/banner.png) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.banner-section .b-inner{
+    padding-top: 15%;
+}
+
+.banner-section .b-inner h1{
+    color: var(--sada);
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.banner-section .b-inner h1 span{
+    color: var(--komola);
+    font-weight: 200;
+}
+
+.banner-section .b-inner h3{
+    color: var(--var2);
+    width: 84%;
+    font-size: 36px;
+    font-family: "Raleway", sans-serif;
+
+}
+
+.banner-section .b-inner .under-line{
+    /* width: 100px; 
+    height: 3px; 
+    background-color:var(--komola); */
+    position: relative;
+    padding: 25px 0px;
+  
+  }
+  .banner-section .b-inner .under-line::after{
+      content: '';
+      width: 75px; 
+      height: 3px; 
+      background-color:var(--var2);
+      position: absolute;
+      transition: 0.8s;
+      /* transform: scale(0 100); */
+      
+   }
+  
+   .banner-section .b-inner .under-line:hover::after{
+      transition: 0.8s; 
+      width: 150px;
+        
+   }
+
+.banner-section .b-inner p{
+    color: var(--var2);
+    font-family: "Raleway", sans-serif;
+    font-weight: 100;
+    width: 65%;
+
+    
+}
+
+.banner-section .b-inner .btns{
+    padding-top: 30px;
+}
+
+.banner-section .b-inner .btns a{
+    padding: 8px 25px;
+    border: 2px solid var(--var2);
+    background: transparent;
+    color: var(--var2);
+    transition: 0.3s;
+}
+
+.banner-section .b-inner .btns a:hover{
+    border: 2px solid var(--komola);
+    background: var(--komola);
+    color: var(--kala);
+    transition: 0.3s;
+}
+/* banner form */
+.banner-section .form-inner{
+    /* padding-top: 31%;
+    padding-left: 24%; */
+    margin-right: -16%;
+    margin: 31% 25px 0px;
+}
+
+.banner-section .form-inner .card{
+ width: 80%;
+
+ 
+}
+
+.banner-section .form-inner form h5{
+padding: 15px 0%;
+font-size: 20px;
+font-weight: bold;
+background: var(--var2);
+text-align: center;
+color: var(--kala);
+
+}
+
+.banner-section .form-inner form h5 span{
+ color: var(--komola);
+}
+
+.banner-section .form-inner form .form-control{
+ padding: 24px;
+ border-bottom: 2px solid var(--var2);
+ border-top: none;
+ border-radius: 0%;
+ color: var(--var2);
+ font-weight: 300;
+}  
+
+.banner-section .form-inner form .form-control{
+ color: var(--kala) !important;
+}    
+
+.banner-section .form-inner form .btn{
+ background: var(--komola);
+ color: var(--sada);
+ border-radius: 0%;
+ padding: 20px ;
+ font-weight: bold;
+ transition: 0.3s;
+}   
+
+.banner-section .form-inner form .btn:hover{
+ background: var(--var2);
+ color: var(--komola);
+ transition: 0.3s;
+ border: 2px solid var(--komola);
+}   
+
+
+/* banner section CSS end*/
+
+
+
+/* s-media section CSS start*/
+.s-media{
+   padding: 25px 0px 15px ;
+   border-bottom: 2px solid var(--var3);
+ }
+   
+   .s-media .s-media-heading{
+    
+   }
+   
+   .s-media .s-media-heading p{
+    width: 90%;
+    color: var(--var3);
+   }
+   
+   .s-media .sm-icon{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3%;
+   }
+   
+   .s-media .sm-icon i{
+    color: var(--var3);
+    font-size: 46px;
+   }
+   
+   .s-media .sm-icon i:hover{
+    color: var(--komola);
+   }
+   
+/*  s-media section CSS end*/
+
+/* tab section CSS start*/
+.tab-section{
+    background: var(--var2);
+    padding: 150px 0px;
+}
+.tab-section img{
+    margin-top: 20px;
+}
+
+.tab-section .tab-1{
+    border-bottom: 1px solid var(--var3);
+    border-radius: 4px 4px 0px 0px !important;
+}
+
+.tab-section .tab-2{
+    border-bottom: 1px solid var(--var3); 
+    border-radius: 0%;
+}
+
+.tab-section .tab-3{
+    border-radius:0px 0px 4px 4px !important;
+}
+
+.tab-section .nav-link{
+    width: 100px;
+    height: 110px;
+    background: var(--kala);
+    color: var(--sada);
+    
+   
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--sada);
+    background-color: var(--komola2);
+    border-radius: 0%;
+}
+
+.tab-section .tab-content{
+    padding-left: 10%;
+}
+
+.tab-section .tab-content h4{
+    padding-bottom: 30px;
+}
+
+.tab-section .tab-content p{
+
+    width: 95%;
+    color:#bebec0 ;
+    padding-bottom: 30px;
+    /* color: var(--var3); */
+    font-weight:600;
+}
+
+.tab-section .tab-content .btns{
+    
+}
+
+.tab-section .tab-content .btns a{
+    padding: 8px 25px;
+    border: 1px solid var(--komola2);
+    background: var(--komola2);
+    
+    color: var(--var2);
+    transition: 0.3s;
+}
+
+.tab-section .tab-content .btns a:hover{
+    border: 2px solid var(--komola2);
+    background: transparent;
+    color: var(--kala);
+    transition: 0.3s;
+}
+
+/* tab section CSS end*/
+
+/*  sub-list section CSS start*/
+.sub-list-section img{
+ margin: 100px 10px 60px -15px;
+ box-shadow: 0px 20px 40px 0px 40px #0000;
+}
+
+.sub-list-section .sl-fst{
+    padding: 90px 0px 10px 0px;
+}
+
+
+
+.sub-list-section .sl-fst h4{
+    
+}
+
+.sub-list-section .sl-fst .under-line{
+    /* width: 100px; 
+    height: 3px; 
+    background-color:var(--komola); */
+    position: relative;
+    padding: 20px 0px;
+  
+  }
+  .sub-list-section .sl-fst .under-line::after{
+      content: '';
+      width: 75px; 
+      height: 3px; 
+      background-color:var(--komola);
+      position: absolute;
+      transition: 0.8s;
+      /* transform: scale(0 100); */
+      
+   }
+  
+   .sub-list-section .sl-fst .under-line:hover::after{
+      transition: 0.8s; 
+      width: 150px;
+        
+   }
+
+
+  .sub-list-section .sl-fst p{
+    width: 80%;
+ }
+
+
+ .sub-list-section .sl-sec{
+   display: flex;
+   margin-top: 10px;
+}
+
+.sub-list-section .sl-sec .sl-icon i{
+  color: var(--komola);
+  border: 2px solid var(--komola);
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.sub-list-section .sl-sec .sl-left{
+  margin-left: 30px;
+}
+
+.sub-list-section .sl-sec .sl-left h6{
+  font-weight: 600;
+}
+
+.sub-list-section .sl-sec .sl-left p{
+  width: 78%;
+}
+
+
+/*  sub-list section CSS end*/
+
+/*  standard picture CSS start*/
+.standard-picture{
+   padding: 120px 0px 50px; 
+   background: var(--var2);
+}
+
+.standard-picture img{
+    margin: -30px 0px 0px 0px; 
+    box-shadow: 0px 20px 40px 0px #0000;
+ }
+
+ .standard-picture .under-line{
+    padding: 15px 0px 20px ;
+
+ }
+
+ .standard-picture .sp-fst p{
+    width: 88%;
+ }
+/*  standard picture CSS end*/
+
+/*   AWESOME section CSS start*/
+.awesome-section{
+    padding-top: 80px ;
+    padding-bottom: 70px;
+}
+
+.awesome-section .awsm-heading{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+.awesome-section .awsm-heading .onder-line{
+    margin: 0px 14% 10px 0px;
+}
+
+.awesome-section .awsm-inner{
+    text-align: center;
+}
+
+.awesome-section .awsm-inner i{
+    color: var(--komola2);
+    border: 2px solid var(--komola2);
+    padding: 5% 7%;
+    font-size: 32px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+
+
+.awesome-section .awsm-inner:hover i{
+    color: var(--var2);
+    border: 2px solid var(--komola2);
+    background: var(--komola);
+}
+
+
+.awesome-section .awsm-inner .k-bord{
+    padding: 5%;
+}
+
+.awesome-section .awsm-inner h4{
+    margin-bottom: 20px;
+}
+
+.awesome-section .awsm-inner p{
+    width: 101%;
+}
+
+/*  AWESOME section CSS end*/
+
+/*   pricing section CSS start*/
+.pricing-section{
+    background: var(--var2);
+    text-align: center;
+    padding: 120px 0px;
+}
+
+
+.pricing-section .pricing-heading .onder-line{
+    margin: -10px 14% 0px 0px;
+}
+
+/* card */
+.pricing-section .p-card{
+    border: 1px solid var(--var2);
+    width: 100%;
+    background: var(--sada);
+}
+
+.pricing-section .p-card{
+    margin-top: 100px;
+}
+
+
+.pricing-section .p-card-2{
+    margin-top: 50px;
+}
+
+
+.pricing-section .p-card:hover .p-card-header, .pricing-section .p-card:hover .p-card-body-2{
+    background: #CCCCFF  ;
+    color: #283747;
+
+}
+
+.pricing-section .p-card:hover .p-card-body-1,.pricing-section .p-card:hover .p-card-body-3{
+    background:#DE3163;
+    color:#d7dbdd  ;
+}
+
+
+.pricing-section .p-card .p-card-header{
+    background: var(--kala2);
+    color: var(--sada);
+    padding: 15px 0px;
+    border-bottom: 1px solid var(--var2);
+}
+
+.pricing-section .p-card .p-card-body-1{
+    border-bottom: 1px solid var(--var2);
+    background: var(--kala2);
+    color: var(--sada);
+}
+
+
+
+.pricing-section .p-card .p-card-body-1 h1{
+    margin-bottom: -10px;
+    font-size: 94px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+}
+
+.pricing-section .p-card .p-card-body-1 h1 sub{
+    font-size: 35px;
+}
+
+.pricing-section .p-card .p-card-body-2{
+    border-bottom: 5px solid var(--komola2);
+    background: var(--kala2);
+    color: var(--sada);
+    padding-top: 10px;
+}
+
+.pricing-section .p-card .p-card-body-3{
+    background: var(--komola2);
+    color: var(--sada) !important;
+    padding: 0px 0px 1px;
+}
+
+
+.pricing-section .p-card .p-card-body-3 p{
+    color: var(--sada) !important;
+    padding-top: 10px;
+}
+
+.pricing-section .p-card .p-card-footer{
+    padding: 10px 0px 0px;
+}
+
+.pricing-section .p-card .p-card-footer .p{
+    border-bottom: 2px solid var(--var2);
+    padding: 5px 0px 10px;
+}
+
+
+
+.pricing-section .p-card-2{
+    
+}
+
+.pricing-section .p-card-3{
+    
+}
+
+
+/*  pricing section CSS end*/
+
+/*   CUSTOMERS section CSS start*/
+.customers-section {
+    padding: 100px 0;
+}
+
+.customers-section .customers-heading{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+.customers-section .customers-heading .onder-line{
+    margin: -10px 14% 0px 0px;
+}
+
+.customers-section .c-profile{
+    margin-left: 30px;
+}
+
+.customers-section .c-profile p{
+    background: var(--var2);
+    padding: 20px 15px;
+    width: 88%;
+    font-family: "Raleway", sans-serif;
+    /* clip-path: polygon(100% 0%, 0% 50%, 100% 100%, 0 50%,0 0); */
+}
+
+.customers-section .c-profile .c-box{
+    position: relative;
+    width: 20px;
+    height: 25px;
+    background: var(--var2);
+    transform: rotate(45deg);
+    left: 30px;
+    bottom: 30px;
+
+}
+
+
+
+.customers-section .c-profile .c-profile-inner{
+    display: flex;
+}
+
+.customers-section .c-profile .c-profile-inner .cp-logo{
+   
+}
+
+.customers-section .c-profile .cp-name{
+    margin: 10px 0px 0px 25px;
+}
+
+.customers-section .c-profile .cp-name h4{
+    
+   
+}
+
+
+.customers-section .c-profile .cp-name h6{
+    color: var(--var3);
+    
+}
+
+/*  CUSTOMERS section CSS end*/
+
+/*   STYLISH section CSS start*/
+.stylish-section{
+ background: url(../img/banner.png) center center no-repeat;
+ background-size: cover;
+ width: 100%;
+ padding: 100px 0px;
+ z-index: 1;
+ position: relative;
+}
+
+.overlay{
+    background: var(--kala);
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: absolute;
+ }
+
+.stylish-section .stylish-inner{
+    text-align: center;
+}
+
+.stylish-section .stylish-inner h2{
+    color: var(--sada);
+}
+
+
+.stylish-section .stylish-inner .onder-line{
+    margin: -10px 14% 0px 0px;
+}
+
+
+.stylish-section .stylish-inner .onder-line::after{
+    background: var(--var2) !important;
+}
+
+.stylish-section .stylish-inner .btns{
+        padding: 30px 2% 0px 0px;
+    
+}
+
+.stylish-section .stylish-inner .btns a{
+    padding: 8px 25px;
+    border: 2px solid var(--var2);
+    background: transparent;
+    color: var(--var2);
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.stylish-section .stylish-inner .btns a:hover{
+    border: 2px solid var(--komola);
+    background: var(--komola);
+    color: var(--kala);
+    transition: 0.3s;
+}
+/*  STYLISH section CSS end*/
+
+/*   CONTACT US section CSS start*/
+.contact-us{
+    padding: 100px 0px ;
+}
+
+.contact-us .contact-us-heading{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.contact-us .contact-us-heading .onder-line{
+    margin: -10px 14% 0px 0px;
+}
+
+.contact-us .form-left{
+
+}
+
+.contact-us .form-left form{
+
+}
+
+.contact-us .form-left form .form-control{
+ border: none;
+ border-bottom: 1px solid var(--var3);
+ border-radius: 0%;
+ padding: 15px 15px;
+ width: 93%;
+}
+
+.contact-us .form-left .form-control::placeholder,.contact-us .form-right .form-control::placeholder{
+ color: var(--var3);
+}
+
+.contact-us .form-right .form-control{
+    border: none;
+    border-bottom: 1px solid var(--var3);
+    border-radius: 0%;
+    padding: 15px 15px;
+    height: 165px;
+    width: 93%;
+    margin-left: 30px;
+}
+
+.contact-us .btns {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact-us .btns a{
+    padding: 10px 25px;
+    border: 1px solid var(--komola2);
+    background: var(--komola2);
+    
+    color: var(--var2);
+    transition: 0.3s;
+}
+
+.contact-us .btns a:hover{
+    border: 2px solid var(--komola2);
+    background: transparent;
+    color: var(--kala);
+    transition: 0.3s;
+}
+    
+
+/*  CONTACT US section CSS end*/
+
+/*   Footer section CSS start*/
+footer{
+ text-align: center;
+ padding: 20px 0px 10px;
+ background: var(--kala);
+}
+
+footer .footer-icon{
+    
+}
+
+footer .footer-icon i{
+    padding: 10px 15px;
+    font-size: 24px;
+    color: var(--var3);
+
+}
+
+footer p{
+    font-weight: 200;
+   }
+
+
+/*  Footer section CSS end*/
